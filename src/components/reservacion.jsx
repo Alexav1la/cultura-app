@@ -1,4 +1,16 @@
-export const ReservationCard = ({ reservation, onCancel, onViewDetail }) => {
+// src/components/reservacion.jsx
+const ReservationCard = ({ reservation, onCancel, onViewDetail }) => {
+  // ✅ Validar que reservation exista
+  if (!reservation) {
+    return (
+      <div className="bg-white rounded-lg shadow-md p-4">
+        <p className="text-gray-500 text-center">
+          No hay reservas disponibles
+        </p>
+      </div>
+    );
+  }
+
   return (
     <div className="bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition">
       <div className="flex justify-between items-start mb-3">
@@ -42,3 +54,5 @@ export const ReservationCard = ({ reservation, onCancel, onViewDetail }) => {
     </div>
   );
 };
+
+export default ReservationCard;

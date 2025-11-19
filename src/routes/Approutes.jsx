@@ -33,7 +33,7 @@ export const AppRoutes = () => {
         </ProtectedRoute>
       } />
       
-      <Route path="/reserva/:id" element={
+      <Route path="/reserva" element={
         <ProtectedRoute>
           <ReservationDetailPage />
         </ProtectedRoute>
