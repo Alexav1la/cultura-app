@@ -1,10 +1,12 @@
+import { Link } from 'react-router-dom';
+
 export default function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark" style={{background: 'linear-gradient(135deg, #1e7e34 0%, #2d9e4e 100%)'}}>
       <div className="container-fluid">
-        <a className="navbar-brand fw-bold" href="#inicio" style={{fontSize: '24px'}}>
+        <Link className="navbar-brand fw-bold" to="/home" style={{fontSize: '24px'}}>
           🎭 Cultura App
-        </a>
+        </Link>
         <button 
           className="navbar-toggler" 
           type="button" 
@@ -19,58 +21,58 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a 
+              <Link 
                 className="nav-link active" 
-                href="#inicio"
+                to="/home"
                 style={{fontSize: '16px', fontWeight: '500'}}
               >
                 Inicio
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a 
+              <Link 
                 className="nav-link" 
-                href="#reservas"
+                to="/reservas"
                 style={{fontSize: '16px', fontWeight: '500'}}
               >
                 Hacer Reservas
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a 
+              <Link 
                 className="nav-link" 
-                href="#mis-reservas"
+                to="/mis-reservas"
                 style={{fontSize: '16px', fontWeight: '500'}}
               >
                 Mis Reservas
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a 
+              <Link 
                 className="nav-link" 
-                href="#acerca-de"
+                to="/acerca-de"
                 style={{fontSize: '16px', fontWeight: '500'}}
               >
                 Acerca de
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a 
+              <Link 
                 className="nav-link" 
-                href="#contacto"
+                to="/contacto"
                 style={{fontSize: '16px', fontWeight: '500'}}
               >
                 Contacto
-              </a>
+              </Link>
             </li>
             <li className="nav-item ms-2">
-              <a 
+              <Link 
                 className="btn btn-light text-success fw-bold" 
-                href="#perfil"
+                to="/perfil"
                 style={{fontSize: '14px'}}
               >
                 👤 Perfil
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
