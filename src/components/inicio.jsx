@@ -1,8 +1,11 @@
+import { useNavigate } from 'react-router-dom';
 import Firtimage from "../assets/Firtimage.jpg";
 
 export default function Inicio() {
+    const navigate = useNavigate();
+
     return(
-        <div className="container py-5 px-4 ">
+        <div className="container py-5 px-4">
             <h1 className="text-success fw-bold text-center">Bienvenido a Cultura App</h1>
             <br/> <br/>
             <div className="row align-items-center">
@@ -20,8 +23,9 @@ export default function Inicio() {
                         type="button"
                         className="btn btn-lg w-100 mt-3 text-white fw-bold"
                         style={{background: 'linear-gradient(135deg, #1e7e34 0%, #2d9e4e 100%)', border: 'none', maxWidth: '320px'}}
+                        onClick={() => navigate('/Evento')}
                     >
-                        Empieza tu reserva ahora!
+                        🎫 Empieza tu reserva ahora!
                     </button>
                 </div>
             </div>

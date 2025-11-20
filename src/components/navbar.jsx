@@ -47,24 +47,6 @@ export default function Navbar() {
                 Mis Reservas
               </Link>
             </li>
-            <li className="nav-item">
-              <Link 
-                className="nav-link" 
-                to="/acerca-de"
-                style={{fontSize: '16px', fontWeight: '500'}}
-              >
-                Acerca de
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link 
-                className="nav-link" 
-                to="/contacto"
-                style={{fontSize: '16px', fontWeight: '500'}}
-              >
-                Contacto
-              </Link>
-            </li>
             <li className="nav-item ms-2">
               <Link 
                 className="btn btn-light text-success fw-bold" 
